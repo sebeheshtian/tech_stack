@@ -10,6 +10,14 @@ import reducers from './src/reducers';
 import LibraryList from './src/components/LibraryList';
 
 class App extends Component {
+  state = {
+    inputValue: ''
+  }
+
+  onChangeText = (text) => {
+    this.setState({ inputValue: text });
+  }
+
   render() {
     return (
       <Provider store={createStore(reducers)}>

@@ -1,11 +1,16 @@
 import { combineReducers } from 'redux';
 import LibraryReducer from './LibraryReducer';
+import SelectionReducer from './SelectionReducer';
 
 export default combineReducers({
   libraries: LibraryReducer,
+  selectedLibraryId: SelectionReducer,
 });
 
 /* console.log(store.getState())
 
-  { libraries: [ { id: 0, title: 'asdasf', des: 'asdadfasdasd' }, ... ] }
+  {
+  libraries: [ { id: 0, title: 'asdasf', des: 'asdadfasdasd' }, ... ],
+  selectedLibraryId: null,
+ }
 */

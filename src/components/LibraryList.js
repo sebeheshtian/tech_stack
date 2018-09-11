@@ -11,7 +11,7 @@ const LibraryList = (props) => {
         keyExtractor={_keyExtractor}
         data={props.libraries}
         renderItem={({item}) => <LibraryItem library={item} />}
-        />
+      />
     </View>
   );
 }
