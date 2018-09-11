@@ -1,0 +1,5 @@
+/*
+  action.type
+
+  return action.payload
+*/

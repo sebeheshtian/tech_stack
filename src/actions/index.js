@@ -6,3 +6,11 @@ export const selectLibrary = (libraryId) => {
     payload: libraryId,
   };
 }
+
+/*
+  changeText (text)
+  return {
+    type: 'change_text',
+    payload: text,
+  };
+*/
